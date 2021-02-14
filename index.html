@@ -429,10 +429,54 @@
           </ul>
         </div>
       </div>
+
+      <div class="footer-form">
+        <form>
+          <div class="footer-subscribe">
+          <label for="">Подпишитесь на рассылку</label>
+          <input type="email" name="mail" id="mail" placeholder="E-mail">
+          <button class="button-primary" type="submit">Подписаться</button>
+          </div>
+        </form>
+      </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+            
+  <form class="contact-form">
+
+    <b class="form-tittle">Оставьте свои данные, мы вам перезвоним</b>
+
+  <div class="form-field">
+    <label for="name">Имя</label>
+    <input type="text" name="name" id="name" />
+  </div>
+
+  <div class="form-field">
+    <label for="tel">Телефон</label>
+    <input type="tel" name="tel" id="tel" />
+  </div>
+
+  <div class="form-field">
+    <label for=mail">Почта</label>
+    <input type="email" name="mail" id="mail" />
+  </div>
+
+  <div class="form-field">
+    <label for="comment">Комментарий</label>
+    <textarea class="comment" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+  </div>
+
+  <div class="topic-option">
+   <input type="checkbox" name="policy" id="policy">
+   <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+  </div>
+
+  <button class="button-primary" type="submit">Отправить</button>
+  
+</form>
+
         <button class="button-close" data-modal-close>
           <svg class="close-button" width="18" height="18">
             <use href="./images/sprite.svg#close-button"></use>
@@ -444,3 +488,4 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
