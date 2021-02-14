@@ -722,6 +722,29 @@ a {
   fill: var(--accent-white-color);
 }
 
+.footer-options {
+  display: flex;
+}
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+}
+
 .box {
   position: relative;
   overflow: hidden;
