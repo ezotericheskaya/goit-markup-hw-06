@@ -197,8 +197,8 @@ a {
 }
 
 .features-tittle {
-  margin-top: 0;
-  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 2;
@@ -510,6 +510,9 @@ a {
   line-height: 0px;
   border-radius: 50%;
   fill: var(--social-icon-link);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-links {
@@ -709,6 +712,9 @@ a {
   border-radius: 50%;
   fill: var(--accent-white-color);
   background-color: #ffffff1a;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -831,6 +837,7 @@ a {
 }
 
 .form-field {
+  position: relative;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -878,4 +885,15 @@ a {
 .topic-option input[type="checkbox"] {
   width: 16px;
   height: 15px;
+}
+
+.form-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+  transform: translateX(50%);
+
+  fill: black;
 }
