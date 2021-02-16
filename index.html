@@ -431,17 +431,20 @@
         </div>
       
 
-      <div class="footer-form">
-        <form>
-          <div class="footer-subscribe">
-            <b class="subscribe">Подпишитесь на рассылку</b>
-          <label for="mail"></label>
-          <input type="email" name="mail" id="mail" placeholder="E-mail">
-          <button class="button-primary" type="submit">Подписаться</button>
-          </div>
+      
+        <form class="footer-subscribe">
+          <label class="footer-label" for="mail">
+              <b class="subscribe">Подпишитесь на рассылку</b>
+              <input type="email" name="mail" id="mail" placeholder="E-mail">   
+          </label>
+          <button class="button-primary" type="submit">
+            Подписаться
+            <svg width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>          
+          </button>
         </form>
-      </div>
-      </div>
+        </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -480,11 +483,12 @@
     <textarea class="comment" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
   </div>
 
-  <div class="topic-option">
-   <input type="checkbox" name="policy" id="policy">
-   <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
-  </div>
-
+ 
+   <label class="topic-option">
+    <input class="checkbox" type="checkbox" name="policy" id="policy"> 
+    <span class="icon-checkbox"></span>Соглашаюсь с рассылкой и принимаю<a class="link-checkbox" href="#">Условия договора</a>
+  </label>
+  
   <button class="button-primary" type="submit">Отправить</button>
   
 </form>
