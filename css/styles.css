@@ -860,7 +860,7 @@ a {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-right: 12px;
-  padding-left: 12px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -894,6 +894,25 @@ a {
   top: 50%;
   left: 0;
   transform: translateX(50%);
-
   fill: black;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:focus-within > .form-icon {
+  fill: var(--accent-button-color);
+}
+
+.form-field:focus-within > input {
+  outline: none;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field:focus-within > textarea {
+  outline: none;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
